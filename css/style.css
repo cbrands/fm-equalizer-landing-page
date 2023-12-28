@@ -3,12 +3,12 @@
   --fw-bold: 700;
   /* --fs-very-large: 5.5rem; */
   --fs-very-large: 2.5rem;
-  --fs-large: 2.5rem;
+  --fs-large: 2rem;
   --fs-standard: 1.25rem;
   --fs-small: 1rem;
   /* --lh-very-large: 5.5rem; */
   --lh-very-large: 3rem;
-  --lh-large: 3.25rem;
+  --lh-large: 2.5rem;
   --lh-standard: 2.125rem;
   --lh-small: 1rem;
   --primary: hsl(177, 68%, 64%);
@@ -45,11 +45,18 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-.intro {
+.intro, .cta-text, .pricing{
   margin-left: 1.5rem;
   font-weight: var(--fw-regular);
   line-height: var(--lh-standard);
+}
+
+.intro {
   margin-bottom: 10rem;
+}
+
+.cta-text {
+  margin-bottom: 2.25rem;
 }
 
 .header-illustration {
@@ -61,17 +68,70 @@ h1 {
 	background-image: url(../assets/bg-pattern-2.svg);
 	background-repeat: no-repeat;
 	background-position: top;
-	/* background-size: 17.5rem 26.25rem; */
 	border-radius: 12px;
-	/* max-width: 23.475rem; */
 	height: 37.5rem;
-	/* width: 23.475rem; */
 }
 
 .app-illustration {
 	position: relative;
-	width: 13.0606rem;
-	height: 26.875rem;
+	width: 209px;
 	top: -6.125rem;
-	left: 5.0419rem;
+	left: 5rem;
+}
+
+.cta {
+  background-color: var(--accent1);
+  color: var(--white);
+  border-radius: 12px;
+  margin-top: -11rem;
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+}
+
+h2 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-large);
+  line-height: var(--lh-large);
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.dollars {
+  font-size: 4rem;
+  font-weight: var(--fw-bold);
+  margin-right: 1rem;
+}
+
+.pricing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+ 
+.btn{
+  display: block;
+  margin: 1rem 0;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ios {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.android {
+  background-color: var(--white);
+  color: var(--black);
+  margin-bottom: 0;
+}
+
+.download {
+  margin-left: 8px;
 }

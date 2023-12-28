@@ -1,3 +1,56 @@
+:root {
+  --fw-regular: 400;
+  --fw-bold: 700;
+  /* --fs-very-large: 5.5rem; */
+  --fs-very-large: 2.5rem;
+  --fs-large: 2.5rem;
+  --fs-standard: 1.25rem;
+  --fs-small: 1rem;
+  /* --lh-very-large: 5.5rem; */
+  --lh-very-large: 3rem;
+  --lh-large: 3.25rem;
+  --lh-standard: 2.125rem;
+  --lh-small: 1rem;
+  --primary: hsl(177, 68, 64);
+  --accent1: hsl(12, 94, 65);
+  --accent2: hsl(33, 100, 70);
+  --white: hsl(20, 33, 98);
+  --black: hsl(244, 23, 12);
+}
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-standard);
+  line-height: var(--fs-standard);
+  color: var(--black);
+  background-image: url(../assets/bg-main-mobile.png);
+	background-repeat: no-repeat;
+	background-size: 30rem;
+	background-position: right -12rem top -9.875rem;
+}
+
+.header-logo {
+  margin-left: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+h1 {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-very-large);
+  line-height: var(--lh-very-large);
+  letter-spacing: -1px;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro {
+  margin-left: 1.5rem;
+  font-weight: var(--fw-regular);
+  margin-bottom: 3rem;
+}
+
+.header-illustration {
+  display: none;
 }

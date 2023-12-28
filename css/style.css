@@ -135,3 +135,27 @@ h2 {
 .download {
   margin-left: 8px;
 }
+
+footer {
+  padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+  gap: 4rem;
+}
+
+.email {
+  font-weight: var(--fw-bold);
+}
+
+.footer-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	line-height: 1.625rem;
+}
+
+.social {
+  display: flex;
+  gap: 1.25rem;
+}
+

@@ -7,7 +7,7 @@
   <title>Frontend Mentor | Equalizer landing page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -45,11 +45,18 @@
     </div>
   </main>
   <footer>
-    <img src="./assets/logo.svg" alt="">
-    <p>
-      All rights reserved © Equalizer 2021
-      Have any problems? Contact us via social media or email us at equalizer@example.com
-    </p>
+    <img class="footer-logo" src="./assets/logo.svg" alt="">
+    <div class="footer-contact">
+      <p class="footer-text">
+        All rights reserved © Equalizer 2021
+        Have any problems? Contact us via social media or email us at <span class="email">equalizer@example.com</span> 
+      </p>
+      <div class="social">
+        <a class="icon" href="#"><img src="./assets/icon-facebook.svg" alt="Link to our facebook page"></a>
+        <a class="icon" href="#"><img src="./assets/icon-instagram.svg" alt="Link to our instagram page"></a>
+        <a class="icon" href="#"><img src="./assets/icon-twitter.svg" alt="Link to our twitter page"></a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

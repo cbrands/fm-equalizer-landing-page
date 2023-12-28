@@ -11,11 +11,11 @@
   --lh-large: 3.25rem;
   --lh-standard: 2.125rem;
   --lh-small: 1rem;
-  --primary: hsl(177, 68, 64);
-  --accent1: hsl(12, 94, 65);
-  --accent2: hsl(33, 100, 70);
-  --white: hsl(20, 33, 98);
-  --black: hsl(244, 23, 12);
+  --primary: hsl(177, 68%, 64%);
+  --accent1: hsl(12, 94%, 65%);
+  --accent2: hsl(33, 100%, 70%);
+  --white: hsl(20, 33%, 98%);
+  --black: hsl(244, 23%, 12%);
 }
 
 body {
@@ -48,9 +48,30 @@ h1 {
 .intro {
   margin-left: 1.5rem;
   font-weight: var(--fw-regular);
-  margin-bottom: 3rem;
+  line-height: var(--lh-standard);
+  margin-bottom: 10rem;
 }
 
 .header-illustration {
   display: none;
+}
+
+.image-container {
+  background-color: var(--black);
+	background-image: url(../assets/bg-pattern-2.svg);
+	background-repeat: no-repeat;
+	background-position: top;
+	/* background-size: 17.5rem 26.25rem; */
+	border-radius: 12px;
+	/* max-width: 23.475rem; */
+	height: 37.5rem;
+	/* width: 23.475rem; */
+}
+
+.app-illustration {
+	position: relative;
+	width: 13.0606rem;
+	height: 26.875rem;
+	top: -6.125rem;
+	left: 5.0419rem;
 }

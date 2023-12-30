@@ -1,16 +1,19 @@
 :root {
   --fw-regular: 400;
   --fw-bold: 700;
-  /* --fs-very-large: 5.5rem; */
+
   --fs-very-large: 2.5rem;
   --fs-large: 2rem;
-  --fs-standard: 1.25rem;
+  --fs-standard: 1.125rem;
   --fs-small: 1rem;
-  /* --lh-very-large: 5.5rem; */
+  --fs-smaller: 1rem;
+
   --lh-very-large: 3rem;
   --lh-large: 2.5rem;
-  --lh-standard: 2.125rem;
-  --lh-small: 1rem;
+  --lh-standard: 1.75rem;
+  --lh-small: 1.625rem;
+  --lh-smaller: 1.625rem;
+
   --primary: hsl(177, 68%, 64%);
   --accent1: hsl(12, 94%, 65%);
   --accent2: hsl(33, 100%, 70%);
@@ -18,11 +21,38 @@
   --black: hsl(244, 23%, 12%);
 }
 
+@media (min-width: 768px) {
+  :root {
+    --fs-very-large: 4rem;
+    --fs-large: 2rem;
+    --fs-standard: 1.125rem;
+    --fs-small: 1.125rem;
+
+    --lh-very-large: 4rem;
+    --lh-large: 2.5rem;
+    --lh-standard: 1.75rem;
+    --lh-small: 1.75rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --fs-very-large: 5.5rem;
+    --fs-large: 2.5rem;
+    --fs-standard: 1.25rem;
+    --fs-small: 1.25rem;
+
+    --lh-very-large: 5.5rem;
+    --lh-large: 3.25rem;
+    --lh-standard: 2.125rem;
+    --lh-small: 2.125rem;
+    --black: red;
+  }
+}
+
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: var(--fw-regular);
-  font-size: var(--fs-standard);
-  line-height: var(--fs-standard);
   color: var(--black);
   background-image: url(../assets/bg-main-mobile.png);
 	background-repeat: no-repeat;
@@ -47,8 +77,8 @@ h1 {
 
 .intro, .cta-text, .pricing{
   margin-left: 1.5rem;
-  font-weight: var(--fw-regular);
-  line-height: var(--lh-standard);
+  font-size: var(--fs-small);
+  line-height: var(--lh-small);
 }
 
 .intro {
@@ -57,6 +87,8 @@ h1 {
 
 .cta-text {
   margin-bottom: 2.25rem;
+  font-size: var(--fs-standard);
+  line-height: var(--lh-standard);
 }
 
 .header-illustration {
@@ -143,6 +175,16 @@ footer {
   gap: 4rem;
 }
 
+.footer-logo {
+  display: block;
+  max-width: 13rem;
+}
+
+.footer-text {
+  font-size: var(--fs-smaller);
+  line-height: var(--lh-smaller);
+}
+
 .email {
   font-weight: var(--fw-bold);
 }
@@ -159,3 +201,68 @@ footer {
   gap: 1.25rem;
 }
 
+@media (min-width: 768px) {
+  body {
+    background-image: url("../assets/bg-main-tablet.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .header-illustration, .header-logo{
+    display: inline;
+  }
+
+  .header-illustration {
+    position: relative;
+    float: right;
+    transform: translate(3rem, -6rem);
+  }
+
+  .header-logo {
+    margin-left: 2.5rem;
+    margin-top: 3.875rem;
+    margin-bottom: 6rem;
+  }
+
+	.app-illustration  {
+		width: 270px;
+		display: block;
+		position: relative;
+		top: -6rem;
+		left: 16%;
+	}
+
+	.cta {
+		z-index: 2;
+		position: absolute;
+		width: 27rem;
+		top: 12rem;
+		left: 20rem;
+		padding: 3rem;
+		margin: 0;
+	}
+
+  .footer-text {
+    max-width: 25rem;
+  }
+
+  footer {
+    margin-top: 12rem;;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+
+}

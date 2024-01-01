@@ -150,17 +150,27 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 1s ease;
 }
 
 .ios {
   background-color: var(--black);
   color: var(--white);
+  
+}
+
+.ios:hover, ios:focus {
+  background-color: var(--primary);
 }
 
 .android {
   background-color: var(--white);
   color: var(--black);
   margin-bottom: 0;
+}
+
+.android:hover, .android:focus {
+  background-color: var(--accent2);
 }
 
 .download {

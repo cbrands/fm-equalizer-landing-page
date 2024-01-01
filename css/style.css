@@ -46,7 +46,6 @@
     --lh-large: 3.25rem;
     --lh-standard: 2.125rem;
     --lh-small: 2.125rem;
-    --black: red;
   }
 }
 
@@ -213,6 +212,10 @@ footer {
     position: relative;
   }
 
+  header {
+    margin-bottom: 20rem;
+  }
+
   .header-illustration, .header-logo{
     display: inline;
   }
@@ -229,6 +232,15 @@ footer {
     margin-bottom: 6rem;
   }
 
+  .image-container {
+    background-color: var(--black);
+    background-image: url(../assets/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 12px;
+    height: 37.5rem;
+  }
+
 	.app-illustration  {
 		width: 270px;
 		display: block;
@@ -240,7 +252,7 @@ footer {
 	.cta {
 		z-index: 2;
 		position: absolute;
-		width: 27rem;
+		width: 27.875rem;
 		top: 12rem;
 		left: 20rem;
 		padding: 3rem;
@@ -264,5 +276,40 @@ footer {
 }
 
 @media (min-width: 1440px) {
+  body {
+    background-image: url("./assets/bg-main-desktop.png");
+    background-size: cover;
+  }
+
+  .image-container {
+		background-size: 19.5rem 29.25rem;
+		max-width: 69rem;
+		background-position: right 29rem top -2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-illustration  {
+		width: 312px;
+		top: -13rem;
+		left: 8%;
+	}
+
+	.cta {
+		top: 7rem;
+		left: 50%;
+		padding: 3rem;
+		margin: 0;
+	}
+
+  footer {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .footer-contact {
+    width: 100%;
+    justify-content: space-around;
+  }
 
 }
